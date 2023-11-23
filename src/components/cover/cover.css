@@ -1,0 +1,128 @@
+
+  
+  .cover-main {
+    height: 700px;
+    object-fit: contain;
+    color: white;
+    display: flex;
+    z-index: 1;
+  }
+
+  .movie-title{
+    font-size: 80px;
+    line-height: normal;
+  }
+
+  .movie-overview{
+    font-weight: normal;
+  }
+
+  .cover-contents{
+    margin-left: 60px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.6;
+    z-index: 2;
+  }
+
+  .btn-play{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: #333;
+    font-size: 18px;
+    padding: 8px 18px;
+    font-weight: bold;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+
+  .btn-play:hover{
+    opacity: 0.8;
+  }
+
+  .btn-more{
+    background-color: #545455;
+    border: 1px solid #545455;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    padding: 8px 18px;
+    font-weight: bold;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  .btn-more:hover{
+    opacity: 1;
+  }
+
+  .faded-bottom{
+    z-index: 0;
+    position: absolute;
+    /* background-color: red; */
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+        180deg,
+        transparent,
+        rgba(37,37,37,0.61),
+        #141414
+    );
+  }
+
+
+@media(max-width: 640px){
+  .cover-main {
+    height: 400px;
+    object-fit: fill;
+    color: white;
+    display: flex;
+    z-index: 1;
+  }
+
+  .movie-title{
+    font-size: 26px;
+    line-height: normal;
+  }
+
+  .movie-overview{
+    font-size: 14px;
+  }
+
+  .btn-play{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: #333;
+    font-size: 12px;
+    padding: 8px 18px;
+    font-weight: bold;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  .btn-more{
+    background-color: #545455;
+    border: 1px solid #545455;
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+    padding: 8px 18px;
+    font-weight: bold;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  .cover-contents{
+    margin-left: 18px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.6;
+    z-index: 2;
+  }
+}
